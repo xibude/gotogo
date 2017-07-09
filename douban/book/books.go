@@ -1,7 +1,7 @@
 // Package github provides a Go API for the GitHub issue tracker.
 // See https://developer.github.com/v3/search/#search-issues.
 // DouBan: https://developers.douban.com/wiki/?title=api_v2
-package douban
+package book
 
 const BookV2URL = "https://api.douban.com/v2/book/"
 
