@@ -1,18 +1,17 @@
 // Issues prints a table of GitHub issues matching the search terms.
-package main
+package douban
 
 import (
 	//"fmt"
 	"log"
 	//"os"
-
-	"woohello.ipo/douban/data"
 	//"strings"
+	"testing"
 )
 
 
-func main() {
-	_, err := douban.SearchBook("1220562")
+func TestSearchBook(t *testing.T) {
+	_, err := SearchBook("1220562")
 	if err != nil {
 		log.Fatal(err)
 	}

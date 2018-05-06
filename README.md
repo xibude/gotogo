@@ -1,4 +1,4 @@
-# goto golang
+# go to golang
 
 ## 目录结构
 1. practice: go练习
