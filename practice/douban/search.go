@@ -48,7 +48,7 @@ func SearchBook(bookId string) (*string, error) {
 	}
 	Lg.Println("body is:", resp.Body)
 
-	var result []*bookInfo
+	var result []*BookInfo
 	dec := json.NewDecoder(resp.Body)
 	Lg.Println("dec is:", dec)
 

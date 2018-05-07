@@ -26,7 +26,7 @@ type User struct {
 	HTMLURL string `json:"html_url"`
 }
 
-type bookInfo struct {
+type BookInfo struct {
 	ID string `json:"id"`
 	Title string `json:"title"`
 }
