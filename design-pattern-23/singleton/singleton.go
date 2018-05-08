@@ -35,12 +35,25 @@ func GetInstance2() *Manager {
 	return m
 }
 
+/////////////////////
+
+func GetInstance3() *Manager {
+	if m == nil {
+		lock.Lock()
+		defer lock.Unlock()
+		if m == nil {
+			m = &Manager {}
+		}
+	}
+
+	return m
+}
 
 /////////////////////////
 
 var once sync.Once
 
-func GetInstance3() *Manager {
+func GetInstance() *Manager {
 	once.Do(func() {
 		m = &Manager {}
 	})
