@@ -1,4 +1,4 @@
-package decoprator
+package decorator
 //https://blog.csdn.net/m0_38132420/article/details/78326846
 
 import "fmt"
